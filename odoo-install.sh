@@ -1,12 +1,11 @@
 
 echo "开始安装odoo"
-echo -n  "请输入要安装的版本:"
-read version
+echo -p -n  "请输入要安装的版本:" version
 
 echo "开始安装odoo服务.."
 wget -O - https://nightly.odoo.com/odoo.key | apt-key add -
 echo "deb http://nightly.odoocdn.com/$version/nightly/deb/ ./" >> /etc/apt/sources.list
-apt-get update && apt-get install odoo
+apt-get update && apt-get -y install odoo
 
 echo "开始安装wkhtmptopdf.."
 wget -O - https://raw.githubusercontent.com/jellyhappy/tools/master/wkhtml.sh | bash
