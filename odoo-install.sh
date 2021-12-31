@@ -1,6 +1,6 @@
 
 echo "开始安装odoo"
-echo -p -n  "请输入要安装的版本:" version
+read -r -p  "请输入要安装的版本:" version
 
 echo "开始安装odoo服务.."
 wget -O - https://nightly.odoo.com/odoo.key | apt-key add -
