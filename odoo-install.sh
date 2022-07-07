@@ -8,7 +8,7 @@ echo "deb http://nightly.odoocdn.com/$version/nightly/deb/ ./" >> /etc/apt/sourc
 apt-get update && apt-get -y install odoo
 
 echo "开始安装wkhtmptopdf.."
-wget -O - https://raw.githubusercontent.com/jellyhappy/tools/master/wkhtml.sh | bash
+wget -O - https://odoomommy.coding.net/p/odoomommy/d/tools/git/raw/master/wkhtml.sh | bash
 echo "开始安装中文字体.."
 apt-get -y install ttf-wqy-microhei ttf-wqy-zenhei
 

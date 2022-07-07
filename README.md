@@ -3,4 +3,4 @@
 ## Functions
 
 * wkhtml : wkhtmlpdf install script.
-* letencrypt: 
+* letencrypt: letencrypt script
