@@ -8,7 +8,12 @@ echo "deb http://nightly.odoocdn.com/$version/nightly/deb/ ./" >> /etc/apt/sourc
 apt-get update && apt-get -y install odoo
 
 echo "开始安装wkhtmptopdf.."
+<<<<<<< Updated upstream
 wget -O - https://raw.githubusercontent.com/jellyhappy/tools/master/wkhtml.sh | bash
+=======
+wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.focal_amd64.deb
+dpkg -i wkhtmltox_0.12.5-1.focal_amd64.deb
+>>>>>>> Stashed changes
 echo "开始安装中文字体.."
 apt-get -y install ttf-wqy-microhei ttf-wqy-zenhei
 
