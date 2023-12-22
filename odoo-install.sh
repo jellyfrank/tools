@@ -4,7 +4,7 @@ read -r -p  "请输入要安装的版本:" version
 
 echo "开始安装odoo服务.."
 wget -O - https://nightly.odoo.com/odoo.key | apt-key add -
-echo "deb http://nightly.odoocdn.com/$version/nightly/deb/ ./" >> /etc/apt/sources.list
+echo "deb http://nightly.odoo.com/$version/nightly/deb/ ./" >> /etc/apt/sources.list
 echo "deb http://security.ubuntu.com/ubuntu focal-security main" | sudo tee /etc/apt/sources.list.d/focal-security.list
 apt-get update && apt-get -y install libssl1.1 xfonts-75dpi odoo
 
