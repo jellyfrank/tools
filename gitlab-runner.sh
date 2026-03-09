@@ -2,7 +2,7 @@
 
 set -e
 
-DEFAULT_URL="http://git.odoohub.com.cn"
+DEFAULT_URL="https://git.odoohub.com.cn"
 
 echo "===== GitLab Runner Setup ====="
 
